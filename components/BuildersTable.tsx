@@ -1,7 +1,7 @@
 import { useSupportedBuilders, Builder } from "../hooks/useSupportedBuilders";
 import React, { useEffect, useState } from "react";
 
-export default () => {
+const SupportedBuildersTable = () => {
   const supportedBuilders = useSupportedBuilders();
   const [builders, setBuilders] = useState<Array<Builder>>([]);
 
@@ -12,7 +12,7 @@ export default () => {
     if (builders.length === 0) {
       init();
     }
-  }, [builders]);
+  }, [builders, supportedBuilders]);
 
   return (
     <table>
@@ -21,7 +21,7 @@ export default () => {
         <th>RPC</th>
       </thead>
       {builders.map((builder) => (
-        <tr>
+        <tr key={builder.name}>
           <td>{builder.name}</td>
           <td>{builder.rpc}</td>
         </tr>
@@ -29,3 +29,5 @@ export default () => {
     </table>
   );
 };
+
+export default SupportedBuildersTable;

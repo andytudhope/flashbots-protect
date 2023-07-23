@@ -98,7 +98,7 @@ const ProtectButtonSelector = () => {
       }
     }
     init();
-  }, [curatedBuilders]);
+  }, [curatedBuilders, supportedBuilders]);
 
   return (
     <div>

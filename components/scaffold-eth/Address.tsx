@@ -15,7 +15,7 @@ import {
 } from "~~/utils/scaffold-eth";
 
 type TAddressProps = {
-  address?: string;
+  address?: `0x${string}`;
   disableAddressLink?: boolean;
   format?: "short" | "long";
   size?: "xs" | "sm" | "base" | "lg" | "xl" | "2xl" | "3xl";

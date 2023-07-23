@@ -15,7 +15,7 @@ export const ShareCTA: FC<Props> = ({ className, title, tags }) => {
 
   return (
     <aside className={cn("text-center p-4 my-8", className)}>
-      <div className="text-2xl mb-6 font-cmu">We've got you covered</div>
+      <div className="text-2xl mb-6 font-cmu">We&apos;ve got you covered</div>
       <div className="flex items-center justify-center">
         <TweetButton
           className="mr-4"

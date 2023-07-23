@@ -22,12 +22,12 @@ const Explorer: NextPage = () => {
             or transfers - or your transaction uses less than 42,000 gas, it
             does not need frontrunning protection. We send those straight to the
             public mempool for quickest inclusion. Transactions with a bundle
-            type of "mempool" will not lead to any rebates.
+            type of &ldquo;mempool&rdquo; will not lead to any rebates.
           </p>
           <p className="text-center text-lg">
             The table below shows all the transactions you have sent through our
-            RPC. You'll be saved from MEV during more complex interactions,
-            which are those transactions with a bundle type of "flashbots".
+            RPC. You&apos;ll be saved from MEV during more complex interactions,
+            which are those transactions with a bundle type of &ldquo;flashbots&rdquo;.
           </p>
         </div>
 

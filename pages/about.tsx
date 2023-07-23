@@ -11,7 +11,7 @@ import { faq } from "~~/lib/faq";
 
 const Content: NextPage = () => {
   const Faqs = faq.map((res) => {
-    return <Accordion title={res.title} description={res.description} />;
+    return <Accordion key={res.key} title={res.title} description={res.description} />;
   });
   return (
     <>
@@ -31,10 +31,10 @@ const Content: NextPage = () => {
         <div className="px-5 md:w-1/2">
           <p className="text-center text-lg font-cmu">
             When you create a transaction on a public blockchain, everyone can
-            see it. More advanced users called "searchers" can profit from
+            see it. More advanced users called &ldquo;searchers&rdquo; can profit from
             knowing what you want to do. As part of our efforts to{" "}
             <strong>illuminate, democratize, and distribute</strong> the value
-            created by public blockchains, we've built a way for you to submit
+            created by public blockchains, we&apos;ve built a way for you to submit
             transactions that are kept safe from those who seek to profit from
             the unsuspecting public.
           </p>

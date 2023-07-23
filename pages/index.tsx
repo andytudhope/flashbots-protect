@@ -63,7 +63,7 @@ const Home: NextPage = () => {
             Flashbots Protect automatically ensures that the value you create
             when using public blockchains is returned to you. We try to balance
             your privacy with the need to share transaction information in order
-            to ensure efficient execution. If you'd like to be more explicit
+            to ensure efficient execution. If you&apos;d like to be more explicit
             about what you are willing to share, and the people with whom you
             are willing to share it, please select the options below which align
             with your own preferences.

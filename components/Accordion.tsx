@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export type FaqProps = {
   title: string;
@@ -15,7 +16,7 @@ export default function Accordion(props: FaqProps) {
     >
       <div className="flex flex-row items-center">
         <p className="flex-auto hover:text-blue-800 font-bold">{props.title}</p>
-        <img
+        <Image
           className="flex-none w-3"
           src="/icon-arrow-down.svg"
           alt="arrow down"

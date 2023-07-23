@@ -1,6 +1,5 @@
 {
-  "name": "@se-2/nextjs",
-  "private": true,
+  "name": "flashbots-protect",
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
